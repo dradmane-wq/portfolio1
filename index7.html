@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://127.0.0.1:5500/index6.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+
+:root{--primary:#8b5cf6;--dark:#111827;--pink:#ec4899;--light:#f8fafc}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#1f2937;line-height:1.7}
+.navbar{background:rgba(17,24,39,.96);backdrop-filter:blur(10px)}
+.navbar-brand span,footer h4 span{color:#f472b6}
+.nav-link{color:#fff!important;margin-left:.5rem}.nav-link:hover{color:#f9a8d4!important}
+.hero{min-height:100vh;display:flex;align-items:center;padding:120px 0 70px;background:linear-gradient(135deg,#111827 0%,#312e81 55%,#831843 100%);color:white}
+.welcome{letter-spacing:3px;font-weight:700;color:#f9a8d4}
+.hero h1{font-size:clamp(2.5rem,5vw,4.5rem);font-weight:800;line-height:1.15}
+.hero h1 span,.section-title span,.highlight{color:#f472b6}
+.hero h2{font-size:clamp(1.35rem,3vw,2rem);margin:1rem 0}
+.hero-text{max-width:600px;color:#e5e7eb;font-size:1.1rem}
+.btn-primary{background:var(--primary);border-color:var(--primary)}.btn-primary:hover{background:#7c3aed;border-color:#7c3aed}
+.profile-circle{width:min(300px,75vw);height:min(300px,75vw);margin:auto;border-radius:50%;padding:9px;background:linear-gradient(135deg,#f472b6,#a78bfa);box-shadow:0 0 45px #f472b655}
+.profile-img{width:100%;height:100%;border-radius:50%;object-fit:cover;background:#e5e7eb}
+.section-padding{padding:90px 0}.section-title{text-align:center;font-size:clamp(2rem,4vw,2.8rem);font-weight:800;margin-bottom:3rem}
+#about{background:#fff}.skills-section,.projects-section{background:#f8fafc}
+.social-links{display:flex;gap:15px}.social-links a{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:50%;background:#ffffff18;color:white;font-size:1.2rem;text-decoration:none;transition:.25s}.social-links a:hover{background:#ec4899;transform:translateY(-3px)}
+#about .social-links a{color:#312e81}
+.skill-card{height:100%;background:white;padding:25px 18px;border-radius:16px;text-align:center;box-shadow:0 8px 24px #1118270b;transition:.25s}.skill-card:hover,.project-card:hover{transform:translateY(-5px);box-shadow:0 15px 30px #11182716}
+.skill-card>i{font-size:2.4rem;color:#8b5cf6}.skill-card h5{margin:12px 0}.progress{height:8px;border-radius:20px}.progress-bar{background:linear-gradient(90deg,#8b5cf6,#ec4899)}
+.timeline{max-width:800px;margin:auto;border-left:3px solid #c4b5fd;padding-left:28px}.timeline-item{position:relative;margin-bottom:30px;padding:22px;background:#fff;border-radius:14px;box-shadow:0 8px 25px #1118270b}.timeline-item:before{content:"";position:absolute;width:15px;height:15px;left:-37px;top:30px;border-radius:50%;background:#ec4899;border:3px solid white}.year{color:#7c3aed;font-weight:700}
+.project-card{border:0;border-radius:16px;overflow:hidden;box-shadow:0 8px 24px #1118270b;transition:.25s}.project-card img{height:210px;object-fit:cover;background:#ede9fe}.project-link{color:#7c3aed;font-weight:700;text-decoration:none}.project-link:hover{color:#ec4899}
+.contact-form{padding:30px;background:white;border-radius:18px;box-shadow:0 8px 30px #11182712}.form-control{padding:12px;border-radius:10px}
+footer{background:#111827;color:#d1d5db;padding:40px 0}footer h4{color:white;font-weight:800}footer .social-links{justify-content:center}
+@media(max-width:767px){.hero{text-align:center}.hero .social-links{justify-content:center}.section-padding{padding:65px 0}.timeline{margin-left:12px}}
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#home">
+            Student<span>Portfolio.</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="container">
+        <div class="row align-items-center gy-5">
+            <div class="col-lg-7">
+                <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+                <h1>Hi, <span>I Am Namrata Admane</span></h1>
+                <h2>I'm a <span class="highlight">MCA Student &amp; Web Developer</span></h2>
+                <p class="hero-text">
+                    I am a passionate student interested in web development and creative design. Welcome to my personal portfolio!
+                </p>
+
+                <a href="#projects" class="btn btn-primary me-2">View My Work</a>
+                <a href="#contact" class="btn btn-outline-light">Contact Me</a>
+
+                <div class="social-links mt-4">
+                    <a href="https://github.com/" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                    <a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://www.instagram.com/" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-5 text-center">
+                <div class="profile-circle">
+                    <img src="image.jpeg" alt="Profile Picture" class="profile-img">
+                </div>
+                <p class="mt-3 text-white-50">Future Developer 🚀</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section-padding">
+    <div class="container">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="row align-items-center gy-4">
+            <div class="col-md-5 text-center">
+                <img src="image.jpeg" alt="Profile Picture" class="img-fluid rounded-circle profile-img">
+            </div>
+            <div class="col-md-7">
+                <h3>Student | Learner | Developer</h3>
+                <p>
+                    Hello! I am a college student interested in web development,
+                    programming and creative design. I enjoy building useful
+                    websites and turning ideas into real projects.
+                </p>
+                <p>
+                    My goal is to improve my technical skills, work on real-world
+                    projects and build a successful career in the IT industry.
+                </p>
+
+                <div class="row mt-4">
+                    <div class="col-6 mb-3"><strong>Name:</strong> Namrata Admane</div>
+                    <div class="col-6 mb-3"><strong>Course:</strong> MCA Student</div>
+                    <div class="col-6 mb-3"><strong>Location:</strong> Uttam Nagar, Pune</div>
+                    <div class="col-6 mb-3"><strong>Email:</strong> <a href="mailto:raginiadmane3@gmail.com">raginiadmane3@gmail.com</a></div>
+                    <div class="col-6 mb-3"><strong>Phone:</strong> <a href="tel:9423562748">9423562748</a></div>
+                </div>
+
+                <a href="#contact" class="btn btn-primary">Let's Connect</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="section-padding skills-section">
+    <div class="container">
+        <h2 class="section-title">My <span>Skills</span></h2>
+        <p class="text-center mb-5">Technologies I am learning and using.</p>
+
+        <div class="row g-4">
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="skill-card">
+                    <i class="bi bi-filetype-html"></i>
+                    <h5>HTML5</h5>
+                    <div class="progress"><div class="progress-bar" style="width:90%"></div></div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="skill-card">
+                    <i class="bi bi-filetype-css"></i>
+                    <h5>CSS3</h5>
+                    <div class="progress"><div class="progress-bar" style="width:80%"></div></div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="skill-card">
+                    <i class="bi bi-bootstrap"></i>
+                    <h5>Bootstrap</h5>
+                    <div class="progress"><div class="progress-bar" style="width:75%"></div></div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="skill-card">
+                    <i class="bi bi-filetype-js"></i>
+                    <h5>JavaScript</h5>
+                    <div class="progress"><div class="progress-bar" style="width:60%"></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Education Section -->
+<section id="education" class="section-padding">
+    <div class="container">
+        <h2 class="section-title">My <span>Education</span></h2>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <span class="year"><i class="bi bi-calendar3"></i> 2025-2026 - Present</span>
+                <h4>Bachelor's Degree</h4>
+                <p>Rajarshi shahu mahavidyalaya,latur 413512</p>
+                <p>Studying programming, databases and web development.</p>
+            </div>
+
+            <div class="timeline-item">
+                <span class="year"><i class="bi bi-calendar3"></i> 2022 - 2023</span>
+                <h4>Higher Secondary Education</h4>
+                <p>Rajarshi shahu mahavidyalaya,latur 413512</p>
+                <p>Completed higher secondary education.</p>
+            </div>
+
+            <div class="timeline-item">
+                <span class="year"><i class="bi bi-calendar3"></i> 2020-2021</span>
+                <h4>Secondary Education</h4>
+                <p>yashwanth madhyamik vidyalaya pimpri amba 413511</p>
+                <p>Completed school education.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="section-padding projects-section">
+    <div class="container">
+        <h2 class="section-title">My <span>Projects</span></h2>
+        <p class="text-center mb-5">Some projects I have created or am developing.</p>
+
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card project-card h-100">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80" class="card-img-top" alt="Portfolio website project">
+                    <div class="card-body">
+                        <span class="badge bg-primary">HTML + CSS</span>
+                        <h4 class="card-title mt-3">Personal Portfolio</h4>
+                        <p class="card-text">A responsive website to showcase my skills, education and projects.</p>
+                        <a href="https://github.com/" class="project-link">View Project <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card project-card h-100">
+                    <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=80" class="card-img-top" alt="Beauty parlour salon interior">
+                    <div class="card-body">
+                        <span class="badge bg-success">HTML + CSS</span>
+                        <h4 class="card-title mt-3">Beauty Parlour Website</h4>
+                        <p class="card-text">A stylish beauty parlour website showcasing salon services, beauty treatments and contact information.</p>
+                        <a href="#contact" class="project-link">View Project <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card project-card h-100">
+                    <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=900&q=80" class="card-img-top" alt="Online book library project">
+                    <div class="card-body">
+                        <span class="badge bg-warning text-dark">Bootstrap</span>
+                        <h4 class="card-title mt-3">Online Book Library</h4>
+                        <p class="card-text">A website concept for exploring books, subjects and learning resources.</p>
+                        <a href="https://github.com/" class="project-link">View Project <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section-padding">
+    <div class="container">
+        <h2 class="section-title">Contact <span>Me</span></h2>
+        <p class="text-center mb-5">Have a project or opportunity? Send me a message.</p>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <form id="contactForm" class="contact-form">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="name" required="">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Your Email</label>
+                        <input type="email" class="form-control" id="email" required="">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Your Message</label>
+                        <textarea class="form-control" id="message" rows="5" required=""></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    <p id="formStatus" class="mt-3" role="status"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container text-center">
+        <h4>Student<span>Portfolio.</span></h4>
+        <p>Learning today, leading tomorrow.</p>
+
+        <div class="social-links">
+            <a href="https://github.com/" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.instagram.com/" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        </div>
+
+        <p class="mt-3 mb-0">© <span id="year"></span> Namrata Admane. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+const contactForm = document.getElementById("contactForm");
+if (contactForm) {
+  contactForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+    document.getElementById("formStatus").textContent =
+      "Thank you! Your message form is ready. Connect an email service to receive messages.";
+    document.getElementById("formStatus").className = "mt-3 text-success";
+  });
+}
+</script>
+</body></html>
